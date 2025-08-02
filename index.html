@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CL AirTech</title>
+
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+
+  <style>
+    .fade-in {
+      opacity: 0;
+      transform: translateY(10px);
+      transition: all 0.5s ease-in-out;
+    }
+    .fade-in.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .bounce-arrow {
+      animation: bounce 1.5s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(8px);
+      }
+    }
+  </style>
+
+  <script>
+    function mostrarContacto() {
+      const contenedor = document.getElementById("contact-links");
+      contenedor.classList.remove("hidden");
+      setTimeout(() => contenedor.classList.add("show"), 50);
+      contenedor.scrollIntoView({ behavior: "smooth" });
+    }
+  </script>
+</head>
+<body class="bg-gray-900 text-white">
+  <section class="py-10 px-4">
+    <div class="max-w-6xl mx-auto flex flex-col items-center gap-8">
+
+      <!-- Logo y nombre centrado -->
+      <div class="flex flex-col items-center gap-2">
+        <div class="flex items-center gap-3">
+          <img src="logo-cl.PNG.png" alt="Logo CL" class="h-12 w-12 rounded-full shadow-lg" />
+          <h1 class="text-3xl font-bold text-white">CL <span class="text-blue-400">AirTech</span></h1>
+        </div>
+        <p class="text-gray-400 text-center">Soluciones profesionales para tu hogar o empresa</p>
+      </div>
+
+      <div class="w-full flex flex-col lg:flex-row items-start justify-between gap-8">
+
+        <!-- Casillas y contacto -->
+        <div class="w-full lg:w-1/2 flex flex-col items-center gap-4">
+
+          <!-- Frase arriba de las casillas -->
+          <div class="text-center">
+            <p class="text-sm uppercase font-semibold text-blue-300">
+              Pulsa aquí para contactarnos
+            </p>
+            <svg class="w-6 h-6 text-blue-300 mx-auto mt-2 bounce-arrow" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </div>
+
+          <!-- Botones de servicios -->
+          <div class="flex flex-col gap-3 w-full">
+            <button onclick="mostrarContacto()" class="bg-blue-200 text-gray-800 shadow p-3 rounded-lg text-sm hover:bg-blue-300 transition w-full text-left">
+              <h2 class="text-blue-800 font-semibold text-base">Mantenimiento de aires</h2>
+              <p>Revisión y limpieza profesional</p>
+            </button>
+            <button onclick="mostrarContacto()" class="bg-blue-200 text-gray-800 shadow p-3 rounded-lg text-sm hover:bg-blue-300 transition w-full text-left">
+              <h2 class="text-blue-800 font-semibold text-base">Reparación de aires</h2>
+              <p>Diagnóstico y solución de fallas</p>
+            </button>
+            <button onclick="mostrarContacto()" class="bg-blue-200 text-gray-800 shadow p-3 rounded-lg text-sm hover:bg-blue-300 transition w-full text-left">
+              <h2 class="text-blue-800 font-semibold text-base">Instalación de aires</h2>
+              <p>Instalamos tu equipo de forma segura y profesional</p>
+            </button>
+          </div>
+
+          <!-- Sección de contacto -->
+          <div id="contact-links" class="hidden fade-in mt-6 bg-gray-800 p-6 rounded-lg w-full shadow-lg">
+            <p class="text-lg font-semibold text-blue-300 mb-4 text-center">¡Contáctanos ahora!</p>
+            <div class="flex justify-center gap-12">
+              <!-- WhatsApp -->
+              <a href="https://wa.me/573001112233" target="_blank" class="transform hover:scale-110 transition flex flex-col items-center">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="w-16 h-16" />
+                <span class="mt-2 text-sm text-white">WhatsApp</span>
+              </a>
+              <!-- Instagram -->
+              <a href="https://www.instagram.com/soy_latan007?igsh=MXhyaDd0Nzh1NXB6Ng==&utm_source=ig_contact_invite" target="_blank" class="transform hover:scale-110 transition flex flex-col items-center">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="w-16 h-16 rounded-lg" />
+                <span class="mt-2 text-sm text-white">@cl_airtech_col</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video de Streamable -->
+        <div class="w-full lg:w-1/2 flex justify-center">
+          <div class="rounded-lg shadow-lg w-full max-w-2xl aspect-w-16 aspect-h-9">
+            <iframe class="w-full h-64 rounded-lg" src="https://streamable.com/kr0l6s" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

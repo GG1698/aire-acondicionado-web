@@ -1,0 +1,115 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #e6f0fa; /* Azul pastel claro */
+  color: #333;
+}
+
+/* Encabezado */
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #d0e6ff; /* tono más fuerte del fondo */
+  color: #003366;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+/* Sección de tarjetas */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  width: 280px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  background-color: #f2f9ff;
+}
+
+.card h2 {
+  font-size: 1.3rem;
+  color: #004080;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #555;
+  margin: 0;
+}
+
+/* Sección de contacto */
+.contacto {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f7fbff;
+  margin-top: 40px;
+  border-top: 2px solid #cce0f5;
+}
+
+.contacto h2 {
+  font-size: 1.6rem;
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+.contacto p {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.contacto a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.contacto a:hover {
+  text-decoration: underline;
+}
+
+/* Iconos de contacto */
+.contacto i {
+  margin-right: 8px;
+  color: #0077cc;
+  font-size: 1.2rem;
+}
+
+/* Imagen QR */
+.contacto img {
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+/* Ocultar contacto al inicio */
+.oculto {
+  display: none;
+}
+
+
+
+
